@@ -1,0 +1,15 @@
+userinput= input("Enter your maths expression")
+x, y, z = userinput.split(" ")
+
+X= float(x)
+Z=float(z)
+
+if y=='+':
+    print(X+Z)
+elif y=='-':
+    print(X-Z)
+elif y=='*':
+    print(X*Z)
+elif y=='/':
+    print(X/Z)
+
