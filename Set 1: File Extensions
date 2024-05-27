@@ -1,0 +1,24 @@
+y=input("Enter the file name")
+x= y.lower().strip()
+
+post0fd0t = x.rfind(".")
+file_name = post0fd0t+1
+
+file_suffix = x[file_name:len(x)]
+
+if file_suffix=="gif":
+    print("image/gif")
+elif file_suffix=="jpg":
+    print("image/jpeg")
+elif file_suffix=="jpeg":
+    print("image/jpeg")
+elif file_suffix=="png":
+    print("image/png")
+elif file_suffix=="pdf":
+    print("application/pdf")
+elif file_suffix=="txt":
+    print("text/plain")
+elif file_suffix=="zip":
+    print("application/zip")
+else:
+    print("application/octet-stream")
