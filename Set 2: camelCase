@@ -1,0 +1,8 @@
+camel= input("camel_case:")
+print("snake_case:" , end="")
+
+for case in camel:
+    if case.isupper():
+        print ('_',case.lower(), sep="", end="")
+    else:
+        print(case, end="")
