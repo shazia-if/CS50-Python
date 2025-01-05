@@ -1,0 +1,9 @@
+Message=input("Say something here")
+
+vowels=['a','e','i','o','u','A','E','I','O','U']
+
+for character in Message:
+    if character in vowels:
+       continue
+    else:
+        print(character, end="")
