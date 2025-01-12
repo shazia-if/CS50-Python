@@ -1,0 +1,26 @@
+while True:
+    fraction= (input("Fraction:"))
+
+    try:
+        x,y = fraction.split('/')
+        X= int(x)
+        Y= int(y)
+        fuel=X/Y
+        if fuel<=1:
+            break
+    except ValueError:
+        pass
+    except ZeroDivisionError:
+        pass
+
+value= fuel*100
+percentage_value= round(value)
+
+if percentage_value <= 1:
+    print('E')
+
+elif percentage_value >= 99:
+    print('F')
+
+else:
+    print(percentage_value,'%', sep="")
