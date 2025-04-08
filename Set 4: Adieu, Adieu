@@ -1,0 +1,18 @@
+import inflect
+import sys
+
+p= inflect.engine()
+
+names_list = []
+
+while True:
+    try:
+        name= input("Enter Name: ")
+        names_list.append(name)
+
+    except EOFError:
+        print()
+        break
+
+final_list= p.join(names_list)
+print("Adieu, adieu, to", final_list, sep=" ")
