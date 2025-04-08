@@ -1,0 +1,5 @@
+import emoji
+
+expression = input("Input: ")
+answer= emoji.emojize(expression, language='alias')
+print("Output: ", answer)
