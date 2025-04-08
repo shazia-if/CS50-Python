@@ -1,0 +1,24 @@
+from pyfiglet import Figlet
+import sys
+
+
+figlet = Figlet()
+
+
+figlet.getFonts()
+
+if len(sys.argv) == 1:
+    s= input("Input: ")
+    print(figlet.renderText(s))
+
+elif len(sys.argv)==3:
+    if sys.argv[1]=='-f' or sys.argv[1]=='--font':
+        f=sys.argv[2]
+        figlet.setFont(font=f)
+        s= input("Input: ")
+        print(figlet.renderText(s))
+    else:
+        sys.exit("Error")
+
+else:
+    sys.exit("Something went wrong")
