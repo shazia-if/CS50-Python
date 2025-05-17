@@ -1,0 +1,22 @@
+import random
+
+def main():
+    level= get_level()
+    i = 1
+    points= 0
+    while i<11:
+        X, Y = generate_integer(level)
+        points= points +game_level(X, Y)
+        i=i+1
+    print("Your Score is:", points)
+
+
+def get_level():
+    while True:
+        try:
+            level= int(input("Level: "))
+            if level ==1 or level==2 or level==3:
+                break
+        except:
+            pass
+    return level
