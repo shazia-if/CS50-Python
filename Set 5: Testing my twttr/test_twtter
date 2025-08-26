@@ -1,0 +1,9 @@
+
+
+import pytest
+from twttr import shorten
+
+def test_twttr():
+    assert shorten("GOOD IS BAD")=="GD S BD"
+    assert shorten("how are you?")=="hw r y?"
+    assert shorten("502")=="502"
